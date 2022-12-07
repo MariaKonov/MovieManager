@@ -2,6 +2,12 @@ public class MovieManager {
     private String[] movies = new String[0];
     private int maxNumberOfFilms = 10;
 
+    public MovieManager(int maxNumberOfFilms) {
+        this.maxNumberOfFilms = maxNumberOfFilms;
+    }
+
+    public MovieManager() {
+    }
 
     public void addMovie(String movie) {
         String[] tmp = new String[movies.length + 1];
